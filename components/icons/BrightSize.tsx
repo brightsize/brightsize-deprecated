@@ -14,7 +14,7 @@ const BrightSize: FunctionComponent = () => {
         d="m175.763 58.631-47.632 82.5-47.631-82.5h95.263Z"
         fill="#95439C"
       />
-      <path stroke="#000" d="M20 199.5h195" />
+      <path stroke="#ffffff" d="M20 199.5h195" />
     </svg>
   );
 };
