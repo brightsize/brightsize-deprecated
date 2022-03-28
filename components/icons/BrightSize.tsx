@@ -3,18 +3,38 @@ import React, { FunctionComponent } from "react";
 const BrightSize: FunctionComponent = () => {
   return (
     <svg
-      width="235"
-      height="235"
+      width="200"
+      height="200"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="53.5" cy="93.5" r="17.5" fill="#FFCC49" />
-      <path d="m85 114 47.631 82.5H37.369L85 114Z" fill="#437852" />
+      <circle cx="41.5" cy="127.5" r="17.5" fill="#FFCC49" />
+      <path d="m137 72 47.631 82.5H89.369L137 72Z" fill="#437852" />
       <path
-        d="m175.763 58.631-47.632 82.5-47.631-82.5h95.263Z"
+        d="m131.763 32.631-47.632 82.5-47.631-82.5h95.263Z"
         fill="#95439C"
       />
-      <path stroke="#000" d="M20 199.5h195" />
+      <path
+        d="M24 172h160"
+        stroke="url(#a)"
+        strokeWidth="3"
+        strokeLinecap="round"
+      />
+      <defs>
+        <linearGradient
+          id="a"
+          x1="0"
+          y1="174.5"
+          x2="200"
+          y2="174.5"
+          gradientUnits="userSpaceOnUse"
+          to="right"
+        >
+          <stop stopColor="#437852" />
+          <stop offset=".69" stopColor="#95439C" />
+          <stop offset=".99" stopColor="#95439C" stopOpacity="0" />
+        </linearGradient>
+      </defs>
     </svg>
   );
 };
