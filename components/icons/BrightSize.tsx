@@ -8,14 +8,14 @@ const BrightSize: FunctionComponent = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="41.5" cy="127.5" r="17.5" fill="#FFCC49" />
-      <path d="m137 72 47.631 82.5H89.369L137 72Z" fill="#437852" />
+      <circle cx="40.5" cy="123.5" r="17.5" fill="#FFCC49" />
+      <path d="m136 68 47.631 82.5H88.369L136 68Z" fill="#437852" />
       <path
-        d="m131.763 32.631-47.632 82.5-47.631-82.5h95.263Z"
+        d="m130.763 28.631-47.632 82.5-47.631-82.5h95.263Z"
         fill="#95439C"
       />
       <path
-        d="M24 172h160"
+        d="M23 168h160"
         stroke="url(#a)"
         strokeWidth="3"
         strokeLinecap="round"
@@ -23,16 +23,15 @@ const BrightSize: FunctionComponent = () => {
       <defs>
         <linearGradient
           id="a"
-          x1="0"
-          y1="174.5"
-          x2="200"
-          y2="174.5"
+          x1="50.5"
+          y1="158.5"
+          x2="183"
+          y2="160"
           gradientUnits="userSpaceOnUse"
-          to="right"
         >
-          <stop stopColor="#437852" />
-          <stop offset=".69" stopColor="#95439C" />
-          <stop offset=".99" stopColor="#95439C" stopOpacity="0" />
+          <stop stopColor="#95439C" />
+          <stop offset="1" stopColor="#437852" />
+          <stop offset="1" stopColor="#fff" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>
