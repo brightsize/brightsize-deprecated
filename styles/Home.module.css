@@ -11,7 +11,31 @@
   padding: 1em 2em;
   width: 100%;
   margin: 0 auto;
+  align-items: center;
 }
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.titleWrapper {
+  display: flex;
+}
+.logoWrapper {
+  display: flex;
+  font-size: 1.5em;
+}
+.titleWrapper h1 {
+  align-self: center;
+  justify-self: center;
+  margin-left: 1em;
+}
+.logo {
+  align-self: center;
+  height: 3em;
+  width: 3em;
+}
+/* That Divider Line */
 .static:after {
   content: '';
   background: #c4c4c4;
@@ -22,9 +46,8 @@
   height: 1px;
   margin: 0 auto;
 }
-
-
 .title {
+  display: inline-block;
   color: white;
 }
 
@@ -32,28 +55,39 @@
 .info {
   padding: 2em;
   right: 0;
-
 }
-
+section.person {
+  display: flex; /* this isn't applying */
+  flex-direction: row;
+  font-size: 1rem;
+  height: 1.4rem;
+}
+.imageWrapper {
+  max-width: 30px;
+  display: flex;
+  overflow: hidden;
+}
+.peopleWrapper {
+  display: flex;
+  align-self: center; /* this isn't applying */
+}
 .qa {
-  /* border-bottom: 1px dashed #c4c4c4; */
   margin-bottom: 3em;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
 }
-.qa h2 {
-  margin-bottom: 0;
-}
-
 .qa p {
   margin-left: 3em;
 }
-
 .role {
-   font-style: italic;
- }
+  font-style: italic;
+}
 
- /* Responsive Styles =========================================== */
- 
-@media screen and (min-width:750px) {
+/* Responsive Styles =========================================== */
+
+@media screen and (min-width: 800px) {
   .main {
     display: flex;
   }
@@ -64,7 +98,7 @@
   }
 
   .static {
-    text-align: center;
+    text-align: right;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -72,7 +106,15 @@
     width: 25%;
   }
 
-/* That Divider Line */
+  .wrapper {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .logo {
+    justify-self: flex-end;
+  }
+
+  /* That Divider Line */
   .static:after {
     content: '';
     background: #c4c4c4;
@@ -82,7 +124,6 @@
     height: 85%;
     top: 7.5%;
   }
-
   .info {
     width: 75%;
     margin-left: 25vw;
