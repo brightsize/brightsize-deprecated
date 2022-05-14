@@ -11,7 +11,7 @@ const People = ({ people }: PeopleProps) => {
   return (
     <div className={styles.container}>
       {people.map((person) => (
-        <Person key={person.id} {...person} />
+        <Person key={person.name} {...person} />
       ))}
     </div>
   );
