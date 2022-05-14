@@ -1,116 +1,131 @@
-.container {
-  padding: 0 2rem;
+.main {
+  margin: 0 auto;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+/* Title/Logo sidebar styles =================================== */
+.static {
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  background-color: black;
+  padding: 1em 2em;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.titleWrapper {
+  display: flex;
+}
+.logoWrapper {
+  display: flex;
+  font-size: 1.5em;
+}
+.titleWrapper h1 {
+  align-self: center;
+  justify-self: center;
+  margin-left: 1em;
+}
+.logo {
+  align-self: center;
+  height: 3em;
+  width: 3em;
+}
+/* That Divider Line */
+.static:after {
+  content: '';
+  background: #c4c4c4;
+  position: absolute;
+  bottom: -1px;
+  right: 7.5%;
+  width: 85%;
+  height: 1px;
+  margin: 0 auto;
+}
+.title {
+  display: inline-block;
+  color: white;
+}
+
+/* Scrollable Area Styles ====================================== */
+.info {
+  padding: 2em;
+  right: 0;
+}
+section.person {
+  display: flex; /* this isn't applying */
+  flex-direction: row;
+  font-size: 1rem;
+  height: 1.4rem;
+}
+.imageWrapper {
+  max-width: 30px;
+  display: flex;
+  overflow: hidden;
+}
+.peopleWrapper {
+  display: flex;
+  align-self: center; /* this isn't applying */
+}
+.qa {
+  margin-bottom: 3em;
+  justify-self: center;
+  align-self: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+.qa p {
+  margin-left: 3em;
+}
+.role {
+  font-style: italic;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
+/* Responsive Styles =========================================== */
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
+@media screen and (min-width: 800px) {
+  .main {
+    display: flex;
+  }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
+  .title > span {
+    display: block;
+    text-align: right;
+  }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
+  .static {
+    text-align: right;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+  }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+  .wrapper {
     flex-direction: column;
+    align-items: flex-end;
+  }
+  .logo {
+    justify-self: flex-end;
+  }
+
+  /* That Divider Line */
+  .static:after {
+    content: '';
+    background: #c4c4c4;
+    position: absolute;
+    right: -1px;
+    width: 1px;
+    height: 85%;
+    top: 7.5%;
+  }
+  .info {
+    width: 75%;
+    margin-left: 25vw;
   }
 }

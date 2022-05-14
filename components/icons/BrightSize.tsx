@@ -1,6 +1,10 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent } from 'react';
 
-const BrightSize: FunctionComponent = () => {
+const BrightSize: FunctionComponent<{
+  height: string | number;
+  width: string | number;
+  className: string;
+}> = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width="200"
