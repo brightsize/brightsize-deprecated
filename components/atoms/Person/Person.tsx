@@ -3,7 +3,7 @@ import React from "react";
 
 import styles from "./Person.module.css";
 
-export type PersonProps = {
+type PersonProps = {
   name: string;
   role: string;
   pic: string;
@@ -23,4 +23,4 @@ const Person = ({ name, role, pic }: PersonProps) => {
   );
 };
 
-export { Person };
+export { Person, type PersonProps };
