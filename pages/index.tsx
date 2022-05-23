@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { BrightSize } from "../components/icons";
-import lauchie from "../assets/lauchie.svg";
+import lauchie from "../assets/lauchie.jpg";
 import miranda from "../assets/miranda.svg";
 import jordan from "../assets/jordan.svg";
 import { People } from "../components/molecule/People/People";
